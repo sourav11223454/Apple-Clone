@@ -43,15 +43,19 @@
 }
 @media (max-width:991px){
     .main-sec{
+        max-width: 100%;
         display: block;
         margin: 5px 1px ;
-        padding-left: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        text-align: left;
     }
- .main-sec p,
+ .main-sec p{
+    text-align: left;
+ }
 .main-sec a {
     text-align: left;
 }
-
 }
 .main-ctn{
     width: 350px;
@@ -68,9 +72,6 @@
     text-decoration: underline;
 }
 .main-imgs{
-    /* height: 500px;
-    max-width: 500px;
-    width: 100%; */
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -85,3 +86,76 @@
     text-decoration: underline;
     cursor: pointer;
 }
+@media (max-width: 991px) {
+    .main-imgs {
+        justify-content: flex-start;   
+        flex-wrap: nowrap;            
+        overflow-x: auto;              
+        gap: 16px;
+        padding-bottom: 10px;
+    }
+
+    .main-imgs > div {
+        flex: 0 0 auto;               
+        width: 120px;
+        text-align: center;
+    }
+
+    .main-imgs::-webkit-scrollbar {
+        display: none;
+    }
+}
+.carousel-1{
+    width: 300px;
+    height: 500px;
+}
+.scroll {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+}
+
+/* hide scrollbar (Apple-style) */
+.scroll::-webkit-scrollbar {
+    display: none;
+}
+
+.scroll img{
+    border-radius: 20px;
+}
+.scroll-img1{
+    position: relative;
+    overflow: hidden;
+}
+.card-text{
+   position: absolute;
+    top: 20px;
+    left: 20px;
+    color: white;
+    z-index: 2;
+    background-color: black;
+}
+.card-text p {
+    background: transparent;
+    margin: 0;
+    padding: 0;
+}
+.card-text .title {
+    font-size: 30px;
+    font-weight: 600;
+    opacity: 0.9;
+}
+
+.card-text .subtitle {
+    font-size: 22px;
+    font-weight: 700;
+    margin-top: 4px;
+}
+
+.card-text .price {
+    font-size: 14px;
+    opacity: 0.8;
+    margin-top: 6px;
+}
+
