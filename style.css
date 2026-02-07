@@ -32,5 +32,56 @@
 }
 .apple-pattern-section {
   background: #f5f5f7;
+  height: 100px;
   overflow: hidden;
+  width: 100%;
+}
+.main-sec{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+@media (max-width:991px){
+    .main-sec{
+        display: block;
+        margin: 5px 1px ;
+        padding-left: 5px;
+    }
+ .main-sec p,
+.main-sec a {
+    text-align: left;
+}
+
+}
+.main-ctn{
+    width: 350px;
+    text-align: right;
+}
+.main-ctn a{
+    text-decoration: none;
+    color: rgb(14, 137, 214);
+    text-align: right;
+    font-size: 14px;
+    font-weight: 450;
+}
+.main-ctn a:hover{
+    text-decoration: underline;
+}
+.main-imgs{
+    /* height: 500px;
+    max-width: 500px;
+    width: 100%; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+.main-imgs p{
+    text-align: center;
+    font-size: 13px;
+    font-weight: 500;
+}
+.main-imgs p:hover{
+    text-decoration: underline;
+    cursor: pointer;
 }
