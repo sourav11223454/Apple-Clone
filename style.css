@@ -4,6 +4,9 @@
     overflow-x: hidden;
     background-color: #f5f5f7;
 }
+html {
+    scroll-behavior: smooth;
+}
 .apple-nav {
     display: flex;
     align-items: center;
@@ -19,8 +22,17 @@
         left: 0;
         width: 100%;                 
         padding: 0 16px;
-        margin-top: 10px;
         font-weight: bold;
+    }
+}
+@media (max-width: 991px) {
+    .emi {
+        margin-top: 10px;
+        left: 0;
+        width: 100%;                 
+        padding-left:  16px;
+        padding-right: 16px;
+        padding-top: 10px;
     }
 }
 .emi{
@@ -105,36 +117,23 @@
         display: none;
     }
 }
-.carousel-1{
-    width: 300px;
-    height: 500px;
-}
-.scroll {
-    display: flex;
-    gap: 20px;
-    overflow-x: auto;
-    padding-bottom: 10px;
-}
 
-/* hide scrollbar (Apple-style) */
-.scroll::-webkit-scrollbar {
-    display: none;
-}
-
-.scroll img{
+.carousel-1 img{
     border-radius: 20px;
+    /* display: flex;
+    align-items: center;
+    justify-content: right; */
 }
-.scroll-img1{
+.product-card{
     position: relative;
-    overflow: hidden;
+    display: inline-block;
 }
 .card-text{
    position: absolute;
     top: 20px;
     left: 20px;
-    color: white;
     z-index: 2;
-    background-color: black;
+ 
 }
 .card-text p {
     background: transparent;
@@ -148,8 +147,8 @@
 }
 
 .card-text .subtitle {
-    font-size: 22px;
-    font-weight: 700;
+    font-size: 20px;
+    font-weight: 600;
     margin-top: 4px;
 }
 
@@ -158,4 +157,11 @@
     opacity: 0.8;
     margin-top: 6px;
 }
+.card-text .title-special{
+    font-size: 22px;
+    font-weight: 600;
+    width: 330px;
+}
+
+
 
