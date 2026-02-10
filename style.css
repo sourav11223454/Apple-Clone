@@ -137,9 +137,6 @@ html {
 
 .carousel-1 img {
     border-radius: 20px;
-    /* display: flex;
-    align-items: center;
-    justify-content: right; */
 }
 
 .scroll-wrapper {
@@ -156,9 +153,7 @@ html {
     scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
     flex-wrap: nowrap;
-
 }
-
 
 .scroll::-webkit-scrollbar {
     display: none;
@@ -184,19 +179,6 @@ html {
     object-fit: cover;
     border-radius: 20px;
 }
-
-/* .scroll-img1::after{
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(
-        to bottom,
-        rgba(0,0,0,0.35),
-        rgba(0,0,0,0)
-    );
-    z-index: 1;
-} */
-
 
 .card-text {
     position: absolute;
@@ -264,57 +246,144 @@ html {
     box-sizing: border-box;
     scroll-snap-align: start;
 }
+.gadget-wrapper {
+    width: 100%;
+    overflow: hidden;
+}
 
-.gadget-img1{
+.gadget-container {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 20px 10px 30px;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+
+.gadget-container::-webkit-scrollbar {
+    display: none;
+}
+
+.gadget-img1 {
     position: relative;
-    width: 550px;
+    width: 380px;
     height: 500px;
     scroll-snap-align: start;
-      overflow: hidden;
+    overflow: hidden;
+    flex-shrink: 0;
+
 }
-.gadget-img1 img{
+
+.gadget-img1 img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     overflow: hidden;
     border-radius: 20px;
 }
-.gadget-img2{
+
+.gadget-img2 {
     position: relative;
-    width: 350px;
+    width: 300px;
     height: 500px;
     background-color: white;
-     display: flex;
-    align-items: flex-start;
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
     border-radius: 20px;
     scroll-snap-align: start;
-      overflow: hidden;
- 
-   
+    flex-shrink: 0;
+    /* overflow: hidden; */
 }
-.gadget-img2 img{
-       margin-top: 0;
-   max-width: 100%;
+.gadget-img2 img {
+    margin-top: 0;
+    max-width: 100%;
     max-height: 100%;
     object-fit: contain;
-    border-radius: 20px;
     display: block;
-    background-color: transparent;
-     /* transform: translateY(-12px); */
 }
-#round-color1{
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: black;
-    border-width: 1px;
-    text-align: center;
+
+/* .img-wrap {
+    position: relative;
+     height: 65%; 
+    width: 100%;
+    flex: 1;
     display: flex;
     align-items: center;
     justify-content: center;
-     bottom: 20px;              
-    left: 20px;
-    z-index: 20;
+    padding: 20px;
+} */
+ .img-wrap {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: white;
+     padding-bottom: 40px;
+    /* overflow-y: hidden; */
 }
+
+
+.img-wrap img {
+    max-height: 100%;
+    width: auto;
+    object-fit: contain;
+  
+}
+/* .img-wrap img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    background: white;
+} */
+
+.img-wrap::-webkit-scrollbar {
+    display: none;
+}
+
+.round {
+    position: absolute;
+    bottom: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 6px;
+    z-index: 20;
+
+}
+
+.round>div {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.round>div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gadget-text {
+    background-color: white;
+    padding: 20px 20px 20px 25px;
+}
+.gadget-text::-webkit-scrollbar{
+    display: none;
+}
+
+.gadget-text .des{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    background-color: transparent;
+}
+
+.gadget-text .price {
+    font-size: 14px;
+    color: #6e6e73;
+    background-color: transparent;
+    margin-top: 20px;
+}
+
+ 
