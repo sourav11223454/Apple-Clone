@@ -408,4 +408,16 @@ html {
      background-color: white;
      padding-bottom: 30px;
 }
+.title-gradient{
+     font-size: 40px;
+  font-weight: 600;
+
+  background: linear-gradient(
+    90deg,
+    #007aff,   /* blue */
+    #5856d6,   /* purple */
+    #ff2d55,   /* pink */
+    #ff3b30    /* red */
+  );
+}
  
