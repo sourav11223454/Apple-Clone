@@ -446,5 +446,28 @@ html {
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
+.quick-button{
+    display: flex;
+    gap: 10px;
+    /* padding: 15px 25px; */
+}
+.quick-button button{
+    padding: 8px 15px;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+.quick-button button:hover{
+    background-color: black;
+    color: white;
+}
+@media (max-width:991px){
+    .quick-button {
+        flex-direction: column;
+    }
+}
+.link-content{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: .5cm;
+}
 
