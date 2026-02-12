@@ -417,17 +417,34 @@ html {
     background-color: white;
     padding-bottom: 30px;
 }
+.help-text {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 2;
+
+}
+.help-text p {
+    margin: 0;
+    padding: 0;
+}
+.help-text .title {
+    font-size: 30px;
+    font-weight: 600;
+    opacity: 0.9;
+}
 
 .gradient-text {
     font-size: 30px;
     font-weight: 600;
-background: linear-gradient(90deg,
-    #007aff,
-    #5856d6,
-    #ff2d55,
-    #ff3b30
-);
-    -webkit-background-clip: text;
+    background: linear-gradient(90deg,
+        #007aff,
+        #5856d6,
+        #ff2d55,
+        #ff3b30
+    );
     background-clip: text;
-    /* color: transparent; */
+    -webkit-text-fill-color: transparent;
 }
+
+
