@@ -474,4 +474,9 @@ html {
     display: flex;
     gap: 50px;
 }
+.footer.ctn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
