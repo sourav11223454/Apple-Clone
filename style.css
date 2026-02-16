@@ -232,7 +232,20 @@ html {
 .detail-cards::-webkit-scrollbar {
     display: none;
 }
+.mac{
+    background: linear-gradient(
+        to right,
+        #FF9F0A,
+        #FF375F,
+        #BF5AF2,
+        #5E5CE6,
+        #64D2FF,
+        #30D158
+    );
 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 .detail-card1 {
     width: 300px;
     min-width: 300px;
@@ -474,9 +487,18 @@ html {
     display: flex;
     gap: 50px;
 }
-.footer.ctn{
+.footer-ctn{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+@media (max-width:991px){
+    .apple-store{
+        display: block;
+    }
+    .footer-ctn{
+        display: block;
+        width: 100%;
+    }
 }
 
